@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-0-10 comment="false" x="26" y="40">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <custom-25 comment="false" id="0" x="0" y="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                </set-val-0-10>
+                <set-val-0-11 comment="false" x="26" y="75">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <custom-26 comment="false" id="0" x="0" y="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                </set-val-0-11>
+                <custom-24 comment="false" x="26" y="110">
+                    <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                    <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                </custom-24>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-3-7 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="4" id="-1">
+                        <create-actor3 comment="false" x="37" y="75">
+                            <actortype eid="0" id="0"/>
+                            <get-byobval-0-7-1 comment="false" id="1" x="0" y="0"/>
+                            <get-byobval-0-7-2 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-byobval-0-7-0 comment="false" id="0" x="0" y="0"/>
+                        <null comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="119">
+                    <group eventID="4" id="-1">
+                        <custom-5 comment="false" x="37" y="139">
+                            <get-byobval-0-7-0 comment="false" id="0" x="0" y="0"/>
+                        </custom-5>
+                    </group>
+                </else>
+                <return comment="false" x="26" y="183">
+                    <actor comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                    </actor>
+                </return>
+            </group>
+            <get-byobval-0-7-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-0-7-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-0-7-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-3-7>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-6-10 comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <return comment="false" x="26" y="45">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <get-byobval-0-10-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                        <times comment="false" id="1" x="0" y="0">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-byobval-0-10-1 comment="false" id="0" x="0" y="0"/>
+                                <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <get-byobval-0-10-2 comment="false" id="1" x="0" y="0"/>
+                        </times>
+                    </plus>
+                </return>
+            </group>
+            <get-byobval-0-10-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-0-10-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-0-10-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-6-10>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receiver-7-24 comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-0-12 comment="false" x="26" y="45">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-12 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-12>
+                <set-val-0-13 comment="false" x="26" y="87">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-13 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="1"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-13>
+                <set-val-0-14 comment="false" x="26" y="129">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-14 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="2"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-14>
+                <set-val-0-15 comment="false" x="26" y="171">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-15 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="1"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-15>
+                <set-val-0-16 comment="false" x="26" y="213">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-16 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="1"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="1"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-16>
+                <set-val-0-17 comment="false" x="26" y="255">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-17 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="2"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="1"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-17>
+                <set-val-0-18 comment="false" x="26" y="297">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-18 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="0"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="2"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-18>
+                <set-val-0-19 comment="false" x="26" y="339">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-19 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="1"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="2"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-19>
+                <set-val-0-20 comment="false" x="26" y="381">
+                    <custom-7 comment="false" id="0" x="0" y="0">
+                        <get-val-0-20 comment="false" id="0" x="0" y="0"/>
+                        <custom-10 comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="2"/>
+                        </custom-10>
+                        <custom-10 comment="false" id="2" x="0" y="0">
+                            <get-byobval-0-24-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="2"/>
+                        </custom-10>
+                    </custom-7>
+                </set-val-0-20>
+            </group>
+            <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-0-24-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-7-24>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="27" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="PlayerA:"/>
+                        <as-number comment="false" id="1" x="0" y="0">
+                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        </as-number>
+                    </str-combine>
+                    <get-val-0-10 comment="false" id="1" x="0" y="0"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="50"/>
+                    </minus>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="8" id="-1"/>
+</groups>

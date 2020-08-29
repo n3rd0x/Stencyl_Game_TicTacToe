@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <custom-block blocktag="custom-3" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="3" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
+    <custom-block blocktag="custom-6" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="6" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
+    <custom-block blocktag="custom-11" blocktype="ACTION" code="scripts.Design_2_2_gResetGame._customBlock_();" desc="" global="true" gui="Missing" id="11" message="" name="" oid="-1" return="void" shared="false" snippetID="2"/>
+    <custom-block blocktag="custom-23" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="23" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="1" fixedrot="false" fric="0.2" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Block" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="1" name="Block" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="1" loop="true" name="1" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="2" loop="true" name="2" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="3" loop="true" name="3" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="4" loop="true" name="4" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block blocktag="custom-7" blocktype="NORMAL" code="(sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_CreateBlock&quot;, [, , ]) : Actor)" desc="Create new or reset block." global="false" gui="CreateBlock( ref: %0 x: %1 y: %2 )" id="7" message="CreateBlock" name="CreateBlock" oid="-1" return="actor" shared="false" snippetID="0">
+        <blank name="ref" order="0" type="object"/>
+        <blank name="x" order="1" type="number"/>
+        <blank name="y" order="2" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-26" blocktype="NORMAL" code="(scripts.Design_2_2_SceneFunctions._customBlock_HalfSceneHeight() : Float)" desc="Calculate half screen height." global="true" gui="HalfScreenHeight" id="26" message="HalfSceneHeight" name="HalfSceneHeight" oid="-1" return="number" shared="false" snippetID="2"/>
+    <custom-block blocktag="custom-25" blocktype="NORMAL" code="(scripts.Design_2_2_SceneFunctions._customBlock_HalfScreenWidth() : Float)" desc="Calculate half screen width." global="true" gui="HalfScreenWidth" id="25" message="HalfScreenWidth" name="HalfScreenWidth" oid="-1" return="number" shared="false" snippetID="2"/>
+    <custom-block blocktag="custom-10" blocktype="NORMAL" code="(sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_NewPos&quot;, [, , ]) : Float)" desc="Calculate new position based on parameters." global="false" gui="NewPos( s: %0 v: %1 m: %2 )" id="10" message="NewPos" name="NewPos" oid="-1" return="number" shared="false" snippetID="0">
+        <blank name="s" order="0" type="number"/>
+        <blank name="v" order="1" type="number"/>
+        <blank name="m" order="2" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-5" blocktype="ACTION" code=".say(&quot;ActorEvents_0&quot;, &quot;_customBlock_Reset&quot;);" desc="Reset animation." global="false" gui="Reset( ref: %0 )" id="5" message="Reset" name="Reset" oid="-1" return="void" shared="false" snippetID="1">
+        <blank name="@block.thisactor" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-20" blocktype="ACTION" code="scripts.Design_3_3_SceneFunctions._customBlock_ResetBoard(, , , , , , , , , , );" desc="Reset the board and initialise block variables." global="true" gui="ResetBoard( sx: %0 sy: %1 b11: %2 b12: %3 b13: %4 b21: %5 b22: %6 b23: %7 b31: %8 b32: %9 b33: %10 )" id="20" message="ResetBoard" name="ResetBoard" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="sx" order="0" type="number"/>
+        <blank name="sy" order="1" type="number"/>
+        <blank name="b11" order="2" type="actor"/>
+        <blank name="b12" order="3" type="actor"/>
+        <blank name="b13" order="4" type="actor"/>
+        <blank name="b21" order="5" type="actor"/>
+        <blank name="b22" order="6" type="actor"/>
+        <blank name="b23" order="7" type="actor"/>
+        <blank name="b31" order="8" type="actor"/>
+        <blank name="b32" order="9" type="actor"/>
+        <blank name="b33" order="10" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-24" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_ResetBoard&quot;, [, ]);" desc="Reset board and initialise blocks." global="false" gui="ResetBoard( sx: %0 sy: %1 )" id="24" message="ResetBoard" name="ResetBoard" oid="-1" return="void" shared="false" snippetID="0">
+        <blank name="sx" order="0" type="number"/>
+        <blank name="sy" order="1" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-14" blocktype="ACTION" code="sayToScene(&quot;SceneFunctions2&quot;, &quot;_customBlock_ResetBoard2&quot;, [, ]);" desc="" global="false" gui="ResetBoard2( sx: %0 sy: %1 )" id="14" message="ResetBoard2" name="ResetBoard2" oid="-1" return="void" shared="false" snippetID="2">
+        <blank name="sx" order="0" type="number"/>
+        <blank name="sy" order="1" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-17" blocktype="ACTION" code="scripts.Design_3_3_SceneFunctions._customBlock_ResetBoard3(, );" desc="" global="true" gui="ResetBoard3( sx: %0 sy: %1 )" id="17" message="ResetBoard3" name="ResetBoard3" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="sx" order="0" type="number"/>
+        <blank name="sy" order="1" type="number"/>
+    </custom-block>
+    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="44" id="27" name="Standard" offsets="0|0|0|,6|0|6,10|0|10,17|0|17,28|0|28,37|0|37,49|0|49,61|0|61,65|0|65,71|0|71,77|0|77,85|0|85,96|0|96,100|0|100,109|0|109,113|0|113,120|0|120,130|0|130,138|0|138,147|0|147,156|0|156,167|0|167,176|0|176,185|0|185,195|0|195,205|0|205,215|0|215,219|0|219,223|0|223,234|0|234,245|0|245,256|0|256,264|0|264,279|0|279,291|0|291,300|0|300,312|0|312,324|0|324,333|0|333,341|0|341,353|0|353,364|0|364,368|0|368,375|0|375,386|0|386,395|0|395,408|0|408,419|0|419,432|0|432,441|0|441,455|0|455,465|0|465,474|0|474,485|0|485,495|0|495,507|0|507,522|0|522,533|0|533,544|0|544,554|0|554,559|0|559,566|0|566,571|0|571,582|0|582,591|0|591,596|0|596,606|0|606,616|0|616,625|0|625,635|0|635,644|0|644,652|0|652,662|0|662,671|0|671,675|0|675,682|0|682,691|0|691,695|0|695,709|0|709,718|0|718,728|0|728,738|0|738,748|0|748,755|0|755,762|0|762,769|0|769,778|0|778,788|0|788,802|0|802,813|0|813,823|0|823,833|0|833,839|0|839,842|0|842,848|0|848,859|0|859,866|0|866,875|0|875,884|0|884,893|0|893,902|0|902,911|0|911,920|0|920,929|0|929,938|0|938,947|0|947,956|0|956,965|0|965,974|0|974,983|0|983,992|0|992,1001|0|1001,1010|0|1010,1019|0|1019,1028|0|1028,1037|0|1037,1046|0|1046,1055|0|1055,1064|0|1064,1073|0|1073,1082|0|1082,1091|0|1091,1100|0|1100,1109|0|1109,1118|0|1118,1127|0|1127,1136|0|1136,1145|0|1145,1154|0|1154,1160|0|1160,1164|0|1164,1173|0|1173,1182|0|1182,1193|0|1193,1204|0|1204,1207|0|1207,1216|0|1216,1223|0|1223,1237|0|1237,1244|0|1244,1253|0|1253,1264|0|1264,1273|0|1273,1287|0|1287,1296|0|1296,1302|0|1302,1313|0|1313,1319|0|1319,1325|0|1325,1330|0|1330,1339|0|1339,1348|0|1348,1352|0|1352,1357|0|1357,1363|0|1363,1371|0|1371,1380|0|1380,1394|0|1394,1408|0|1408,1422|0|1422,1430|0|1430,1442|0|1442,1454|0|1454,1466|0|1466,1478|0|1478,1490|0|1490,1502|0|1502,1518|0|1518,1530|0|1530,1539|0|1539,1548|0|1548,1557|0|1557,1566|0|1566,1572|0|1572,1577|0|1577,1585|0|1585,1591|0|1591,1605|0|1605,1616|0|1616,1629|0|1629,1642|0|1642,1655|0|1655,1668|0|1668,1681|0|1681,1692|0|1692,1705|0|1705,1715|0|1715,1725|0|1725,1735|0|1735,1745|0|1745,1756|0|1756,1765|0|1765,1775|0|1775,1785|0|1785,1795|0|1795,1805|0|1805,1815|0|1815,1825|0|1825,1835|0|1835,1849|0|1849,1858|0|1858,1867|0|1867,1876|0|1876,1885|0|1885,1894|0|1894,1900|0|1900,1905|0|1905,1913|0|1913,1919|0|1919,1929|0|1929,1938|0|1938,1948|0|1948,1958|0|1958,1968|0|1968,1978|0|1978,1988|0|1988,1999|0|1999,2009|0|2009,2018|0|2018,2027|0|2027,2036|0|2036,2045|0|2045,2055|0|2055,2065|0|2065,2075|0|2075,2087|0|2087,2097|0|2097,2109|0|2109,2119|0|2119,2131|0|2131,2141|0|2141,2153|0|2153,2162|0|2162,2174|0|2174,2183|0|2183,2195|0|2195,2204|0|2204,2216|0|2216,2225|0|2225,2237|0|2237,2250|0|2250,2264|0|2264,2275|0|2275,2284|0|2284,2293|0|2293,2302|0|2302,2311|0|2311,2320|0|2320,2329|0|2329,2338|0|2338,2347|0|2347,2356|0|2356,2365|0|2365,2377|0|2377,2387|0|2387,2399|0|2399,2409|0|2409,2421|0|2421,2431|0|2431,2443|0|2443,2453|0|2453,2464|0|2464,2473|0|2473,2487|0|2487,2497|0|2497,2504|0|2504,2511|0|2511,2518|0|2518,2525|0|2525,2532|0|2532,2539|0|2539,2543|0|2543,2547|0|2547,2551|0|2551,2555|0|2555,2564|0|2564,2572|0|2572,2581|0|2581,2590|0|2590,2601|0|2601,2610|0|2610,2619|0|2619,2628|0|2628,2633|0|2633,2642|0|2642,2646|0|2646,2655|0|2655,2661|0|2661,2670|0|2670,2677|0|2677,2687|0|2687,2694|0|2694,2705|0|2705,2714|0|2714,2725|0|2725,2734|0|2734,2745|0|2745,2754|0|2754,2765|0|2765,2776|0|2776,2785|0|2785,2798|0|2798,2808|0|2808,2821|0|2821,2831|0|2831,2844|0|2844,2855|0|2855,2872|0|2872,2887|0|2887,2897|0|2897,2904|0|2904,2914|0|2914,2921|0|2921,2931|0|2931,2938|0|2938,2947|0|2947,2954|0|2954,2963|0|2963,2970|0|2970,2979|0|2979,2986|0|2986,2995|0|2995,3002|0|3002,3013|0|3013,3020|0|3020,3031|0|3031,3039|0|3039,3050|0|3050,3057|0|3057,3067|0|3067,3076|0|3076,3086|0|3086,3095|0|3095,3105|0|3105,3114|0|3114,3124|0|3124,3133|0|3133,3143|0|3143,3152|0|3152,3162|0|3162,3171|0|3171,3186|0|3186,3200|0|3200,3211|0|3211,0|22|3221,11|22|3232,21|22|3242,31|22|3252,41|22|3262,51|22|3272,61|22|3282,71|22|3292" oid="-1" prerendered="false" readable="false" rowHeight="22" shared="false"/>
+    <custom-block blocktag="custom-15" blocktype="ACTION" code="sayToScene(&quot;SceneFunctions2&quot;, &quot;_customBlock_test&quot;);" desc="" global="false" gui="test" id="15" message="test" name="test" oid="-1" return="void" shared="false" snippetID="2"/>
+    <custom-block blocktag="custom-21" blocktype="ACTION" code="sayToScene(&quot;SceneFunctions&quot;, &quot;_customBlock_TEst&quot;);" desc="" global="false" gui="TESTT" id="21" message="TEst" name="TEst" oid="-1" return="void" shared="false" snippetID="3"/>
+    <custom-block blocktag="custom-22" blocktype="ACTION" code="sayToScene(&quot;SceneFunctions&quot;, &quot;_customBlock_test&quot;, []);" desc="" global="false" gui="test( %0 )" id="22" message="test" name="test" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="self" order="0" type="scene"/>
+    </custom-block>
+</pack>

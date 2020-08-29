@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block22" hidden="true" id="16" name="_Block22" order="6"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block23" hidden="true" id="17" name="_Block23" order="7"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block31" hidden="true" id="18" name="_Block31" order="8"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block32" hidden="true" id="19" name="_Block32" order="9"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block33" hidden="true" id="20" name="_Block33" order="10"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="StartPosX" hidden="false" id="10" name="_StartPosX" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="StartPosY" hidden="false" id="11" name="_StartPosY" order="1"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block11" hidden="true" id="12" name="_Block11" order="2"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block12" hidden="true" id="13" name="_Block12" order="3"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block13" hidden="true" id="14" name="_Block13" order="4"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Block21" hidden="true" id="15" name="_Block21" order="5"/>
+        <blocks>
+            <receiver blockID="2" id="1"/>
+            <receiver blockID="4" id="2"/>
+            <receiver blockID="7" id="3"/>
+            <receiver blockID="8" id="4"/>
+            <receiver blockID="9" id="5"/>
+            <receiver blockID="10" id="6"/>
+            <receiver blockID="24" id="7"/>
+        </blocks>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="CreateBlock" enabled="true" id="4" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="NewPos" enabled="true" id="6" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="ResetBoard" enabled="true" id="7" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="8" name="draw" order="7" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="0" attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_0" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks>
+            <receiver blockID="5" id="1"/>
+        </blocks>
+        <events>
+            <event displayName="Reset" enabled="true" id="1" name="event-custom-block" order="1" repeats="true"/>
+            <event displayName="MouseEnters" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="4" repeats="true"/>
+            <event displayName="MouseExits" enabled="true" id="3" name="event-mouse-enter-exit-actor" order="5" repeats="true"/>
+            <event displayName="MouseClick" enabled="true" id="5" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_2_2_SceneFunctions" classname="scripts.Design_2_2_SceneFunctions" desc="" description="" design="true" drawOrder="0" id="2" name="SceneFunctions" oid="-1" package="scripts" shared="false" type="scene">
+        <blocks>
+            <receiver blockID="25" id="1"/>
+            <receiver blockID="26" id="2"/>
+        </blocks>
+        <events>
+            <event displayName="HalfScreenWidth" enabled="true" id="1" name="event-custom-block-global" order="1" repeats="true"/>
+            <event displayName="HalfScreenHeight" enabled="true" id="2" name="event-custom-block-global" order="2" repeats="true"/>
+        </events>
+    </snippet>
+</pack>
