@@ -1,0 +1,37 @@
+-----------------------------------------
+- CREDITS
+-----------------------------------------
+
+====================
+= Arts
+====================
+ *  Kenney.nl (http://kenney.nl)
+
+    Simplified Platformer Pack
+    https://kenney.nl/assets/simplified-platformer-pack
+        -   platformPack_tile021.png
+        -   platformPack_tile022.png
+        -   platformPack_tile030.png
+        -   platformPack_tile036.png
+        -   platformPack_tile042.png
+
+
+
+
+====================
+= Musics
+====================
+
+
+
+
+
+====================
+= Sounds
+====================
+*   Kenney.nl (http://kenney.nl)
+    Interface Sounds
+    https://kenney.nl/assets/interface-sounds
+        -   confirmation_004.ogg
+        -   switch_007.ogg
+
