@@ -15,34 +15,44 @@
     <group eventID="2" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <if comment="false" x="26" y="42">
+                <comment-short comment="false" x="26" y="42">
+                    <int id="0" val="Make this check on Video006."/>
+                </comment-short>
+                <if comment="false" x="26" y="62">
                     <group eventID="2" id="-1">
-                        <if comment="false" x="37" y="85">
+                        <if comment="false" x="37" y="92">
                             <group eventID="2" id="-1">
-                                <setanim comment="false" x="48" y="110">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="1"/>
-                                </setanim>
+                                <if comment="false" x="48" y="135">
+                                    <group eventID="2" id="-1">
+                                        <setanim comment="false" x="59" y="160">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </setanim>
+                                    </group>
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="199">
+                                    <group eventID="2" id="-1">
+                                        <setanim comment="false" x="59" y="219">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </setanim>
+                                    </group>
+                                </else>
                             </group>
-                            <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <getanim comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                    </getanim>
+                                </as-number>
+                                <int id="1" val="0"/>
+                            </eq>
                         </if>
-                        <else comment="false" x="37" y="149">
-                            <group eventID="2" id="-1">
-                                <setanim comment="false" x="48" y="169">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="3"/>
-                                </setanim>
-                            </group>
-                        </else>
                     </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <as-number comment="false" id="0" x="0" y="0">
-                            <getanim comment="false" id="0" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                            </getanim>
-                        </as-number>
-                        <int id="1" val="0"/>
-                    </eq>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                    </not>
                 </if>
             </group>
             <ACTOR eid="this" id="0"/>
@@ -100,26 +110,35 @@
     <group eventID="6" id="0">
         <receiver-2-28 comment="false" x="15" y="15">
             <group eventID="6" id="-1">
-                <if comment="false" x="26" y="45">
+                <comment-short comment="false" x="26" y="45">
+                    <int id="0" val="Left out the first condition to demonstrate bugs."/>
+                </comment-short>
+                <if comment="false" x="26" y="65">
                     <group eventID="6" id="-1">
-                        <if comment="false" x="37" y="98">
+                        <if comment="false" x="37" y="118">
                             <group eventID="6" id="-1">
-                                <setanim comment="false" x="48" y="123">
+                                <setanim comment="false" x="48" y="143">
                                     <get-byobval-1-28-0 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="2"/>
                                 </setanim>
                             </group>
                             <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="37" y="167">
+                        <else comment="false" x="37" y="187">
                             <group eventID="6" id="-1">
-                                <setanim comment="false" x="48" y="187">
+                                <setanim comment="false" x="48" y="207">
                                     <get-byobval-1-28-0 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="4"/>
                                 </setanim>
                             </group>
                         </else>
-                        <set-game-val-0 comment="false" x="37" y="231">
+                        <set-game-val-6 comment="false" x="37" y="251">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-game-val-6>
+                        <set-game-val-0 comment="false" x="37" y="281">
                             <not comment="false" id="0" x="0" y="0">
                                 <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                             </not>

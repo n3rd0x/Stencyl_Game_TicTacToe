@@ -5,7 +5,7 @@
 ====================
 = Arts
 ====================
- *  Kenney.nl (http://kenney.nl)
+*  Kenney.nl (http://kenney.nl)
 
     Simplified Platformer Pack
     https://kenney.nl/assets/simplified-platformer-pack
@@ -14,6 +14,28 @@
         -   platformPack_tile030.png
         -   platformPack_tile036.png
         -   platformPack_tile042.png
+
+*   CoolText (https://cooltext.com)
+    Tic Tac Toe (Fun style)
+        - Start Colour: #12E0D2
+        - End Colour:   #0952F0
+
+    Tie Game (Keen style)
+        - Start Colour: #F2D324
+        - End Colour:   #F02B2B
+
+    Player 1 (Keen style)
+    Winner
+        - Start Colour: #30DBB3
+        - End Colour:   #7ADB30
+
+    Player 2 (Keen style)
+    Winner
+        - Start Colour: #F0CE0C
+        - End Colour:   #F96100
+
+    New Round(Easy style)
+        - Colour:       #004A99
 
 
 
