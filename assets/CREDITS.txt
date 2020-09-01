@@ -37,6 +37,7 @@
     New Round(Easy style)
     Start Game
     Credits
+    Back
         - Colour:       #004A99
         - Colour:       #FF0505
 
@@ -63,9 +64,11 @@
         -   switch_007.ogg
 
  * Freesound.org (https://www.freesound.org)
+    Sandermotions (https://www.freesound.org)
     Applause
     https://freesound.org/people/Sandermotions/sounds/277021/
 
+    tim.kahn (https://www.freesound.org)
     Awww0
     https://freesound.org/people/tim.kahn/sounds/336998/
 

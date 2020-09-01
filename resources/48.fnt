@@ -1,5 +1,5 @@
 #
-#Mon Aug 31 19:33:16 CEST 2020
+#Tue Sep 01 12:51:00 CEST 2020
 shadow.x=2
 shadow.y=2
 color=\#ffffff
@@ -12,4 +12,4 @@ size=40
 antialias=true
 style=plain
 family=SansSerif
-chars=0-9
+chars=all

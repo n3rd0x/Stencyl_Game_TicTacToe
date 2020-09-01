@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="48" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <get-val-15-1 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <custom-25 comment="false" id="0" x="0" y="0"/>
+                        <custom-65 comment="false" id="1" x="0" y="0">
+                            <get-val-15-1 comment="false" id="0" x="0" y="0"/>
+                            <font eid="48" id="1"/>
+                        </custom-65>
+                    </minus>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <custom-26 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </plus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="110">
+                    <font eid="27" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="137">
+                    <get-val-15-2 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <custom-25 comment="false" id="0" x="0" y="0"/>
+                        <custom-65 comment="false" id="1" x="0" y="0">
+                            <get-val-15-2 comment="false" id="0" x="0" y="0"/>
+                            <font eid="27" id="1"/>
+                        </custom-65>
+                    </minus>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <custom-26 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="50"/>
+                    </plus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="180">
+                    <get-val-15-3 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <custom-25 comment="false" id="0" x="0" y="0"/>
+                        <custom-65 comment="false" id="1" x="0" y="0">
+                            <get-val-15-3 comment="false" id="0" x="0" y="0"/>
+                            <font eid="27" id="1"/>
+                        </custom-65>
+                    </minus>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <custom-26 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="80"/>
+                    </plus>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

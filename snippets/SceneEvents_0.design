@@ -160,7 +160,13 @@
     <group eventID="7" id="0">
         <receiver-7-24 comment="false" x="15" y="15">
             <group eventID="7" id="-1">
-                <set-val-0-12 comment="false" x="26" y="45">
+                <comment-wrapper comment="false" x="26" y="45">
+                    <group eventID="7" id="-1">
+                        <stop-sounds comment="false" x="37" y="65"/>
+                    </group>
+                    <int id="0" val="Bug: Implement this on Video008."/>
+                </comment-wrapper>
+                <set-val-0-12 comment="false" x="26" y="97">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-12 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -175,7 +181,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-12>
-                <set-val-0-13 comment="false" x="26" y="87">
+                <set-val-0-13 comment="false" x="26" y="139">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-13 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -190,7 +196,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-13>
-                <set-val-0-14 comment="false" x="26" y="129">
+                <set-val-0-14 comment="false" x="26" y="181">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-14 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -205,7 +211,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-14>
-                <set-val-0-15 comment="false" x="26" y="171">
+                <set-val-0-15 comment="false" x="26" y="223">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-15 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -220,7 +226,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-15>
-                <set-val-0-16 comment="false" x="26" y="213">
+                <set-val-0-16 comment="false" x="26" y="265">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-16 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -235,7 +241,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-16>
-                <set-val-0-17 comment="false" x="26" y="255">
+                <set-val-0-17 comment="false" x="26" y="307">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-17 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -250,7 +256,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-17>
-                <set-val-0-18 comment="false" x="26" y="297">
+                <set-val-0-18 comment="false" x="26" y="349">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-18 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -265,7 +271,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-18>
-                <set-val-0-19 comment="false" x="26" y="339">
+                <set-val-0-19 comment="false" x="26" y="391">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-19 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -280,7 +286,7 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-19>
-                <set-val-0-20 comment="false" x="26" y="381">
+                <set-val-0-20 comment="false" x="26" y="433">
                     <custom-7 comment="false" id="0" x="0" y="0">
                         <get-val-0-20 comment="false" id="0" x="0" y="0"/>
                         <custom-10 comment="false" id="1" x="0" y="0">
@@ -295,16 +301,16 @@
                         </custom-10>
                     </custom-7>
                 </set-val-0-20>
-                <set-game-val-7 comment="false" x="26" y="423">
+                <set-game-val-7 comment="false" x="26" y="475">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-7>
-                <set-game-val-6 comment="false" x="26" y="448">
+                <set-game-val-6 comment="false" x="26" y="500">
                     <int id="0" val="0"/>
                 </set-game-val-6>
-                <set-val-0-29 comment="false" x="26" y="468">
+                <set-val-0-29 comment="false" x="26" y="520">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-0-29>
-                <play-sound4 comment="false" x="26" y="493">
+                <play-sound4 comment="false" x="26" y="545">
                     <int id="0" val="1"/>
                     <sound eid="53" id="1"/>
                 </play-sound4>
@@ -757,24 +763,24 @@
                 </comment-long>
                 <if comment="false" x="26" y="1268">
                     <group eventID="11" id="-1">
-                        <toggle-image comment="false" x="37" y="1293">
+                        <custom-60 comment="false" x="37" y="1293">
                             <ACTOR eid="6" id="0"/>
-                            <int id="1" val="0"/>
-                        </toggle-image>
-                        <toggle-image comment="false" x="37" y="1320">
+                            <false comment="false" id="1" x="0" y="0"/>
+                        </custom-60>
+                        <toggle-image comment="false" x="37" y="1325">
                             <get-val-0-23 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>
                         </toggle-image>
                     </group>
                     <get-game-val-7 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="1364">
+                <else comment="false" x="26" y="1369">
                     <group eventID="11" id="-1">
-                        <toggle-image comment="false" x="37" y="1384">
+                        <custom-60 comment="false" x="37" y="1389">
                             <ACTOR eid="6" id="0"/>
-                            <int id="1" val="1"/>
-                        </toggle-image>
-                        <toggle-image comment="false" x="37" y="1411">
+                            <true comment="false" id="1" x="0" y="0"/>
+                        </custom-60>
+                        <toggle-image comment="false" x="37" y="1421">
                             <get-val-0-23 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="0"/>
                         </toggle-image>
@@ -804,15 +810,31 @@
     <group eventID="13" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="13" id="-1">
-                <custom-24 comment="false" x="26" y="42">
-                    <get-val-0-10 comment="false" id="0" x="0" y="0"/>
-                    <get-val-0-11 comment="false" id="1" x="0" y="0"/>
-                </custom-24>
-                <incdec comment="false" x="26" y="67">
-                    <int id="0" val="28"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="1"/>
-                </incdec>
+                <comment-wrapper comment="false" x="26" y="42">
+                    <group eventID="13" id="-1">
+                        <if comment="false" x="37" y="62">
+                            <group eventID="13" id="-1">
+                                <custom-24 comment="false" x="48" y="100">
+                                    <get-val-0-10 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-0-11 comment="false" id="1" x="0" y="0"/>
+                                </custom-24>
+                                <incdec comment="false" x="48" y="125">
+                                    <int id="0" val="28"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                </incdec>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="6" id="0"/>
+                                    <int id="1" val="abMouseHover"/>
+                                    <int id="2" val="_Hidden"/>
+                                </get-attribute>
+                            </not>
+                        </if>
+                    </group>
+                    <int id="0" val="Introduce bug by not checking for hidden attribute."/>
+                </comment-wrapper>
             </group>
             <ACTOR eid="6" id="0"/>
             <int id="1" val="4"/>

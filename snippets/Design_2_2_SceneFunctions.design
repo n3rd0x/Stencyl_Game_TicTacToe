@@ -30,4 +30,22 @@
         </receiver-2-26>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-3-65 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <return comment="false" x="26" y="45">
+                    <div comment="false" id="0" x="0" y="0">
+                        <get-font-width2-new comment="false" id="0" x="0" y="0">
+                            <get-byobval-2-65-1 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-2-65-0 comment="false" id="1" x="0" y="0"/>
+                        </get-font-width2-new>
+                        <int id="1" val="2"/>
+                    </div>
+                </return>
+            </group>
+            <get-byobval-2-65-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-2-65-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-3-65>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>
