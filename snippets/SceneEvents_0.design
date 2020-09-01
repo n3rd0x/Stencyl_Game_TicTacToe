@@ -77,6 +77,15 @@
                     </group>
                     <int id="0" val="Modular the following later."/>
                 </comment-wrapper>
+                <set-val-0-26 comment="false" x="26" y="403">
+                    <int id="0" val="0"/>
+                </set-val-0-26>
+                <set-val-0-27 comment="false" x="26" y="423">
+                    <int id="0" val="0"/>
+                </set-val-0-27>
+                <set-val-0-28 comment="false" x="26" y="443">
+                    <int id="0" val="1"/>
+                </set-val-0-28>
             </group>
         </init>
     </group>
@@ -292,6 +301,13 @@
                 <set-game-val-6 comment="false" x="26" y="448">
                     <int id="0" val="0"/>
                 </set-game-val-6>
+                <set-val-0-29 comment="false" x="26" y="468">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-29>
+                <play-sound4 comment="false" x="26" y="493">
+                    <int id="0" val="1"/>
+                    <sound eid="53" id="1"/>
+                </play-sound4>
             </group>
             <get-byobval-0-24-0 comment="false" id="0" x="0" y="0"/>
             <get-byobval-0-24-1 comment="false" id="1" x="0" y="0"/>
@@ -316,6 +332,50 @@
                         <get-game-val-7 comment="false" id="0" x="0" y="0"/>
                     </not>
                 </if>
+                <draw-text comment="false" x="26" y="129">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Round(s): "/>
+                        <get-val-0-28 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="16"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="30"/>
+                    </minus>
+                </draw-text>
+                <set-font-new comment="false" x="26" y="167">
+                    <font eid="48" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="194">
+                    <get-val-0-26 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <int id="0" val="100"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                <font eid="48" id="0"/>
+                                <get-val-0-26 comment="false" id="1" x="0" y="0"/>
+                            </get-font-width2-new>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <int id="2" val="160"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="242">
+                    <get-val-0-27 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <int id="0" val="548"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                <font eid="48" id="0"/>
+                                <get-val-0-27 comment="false" id="1" x="0" y="0"/>
+                            </get-font-width2-new>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <int id="2" val="160"/>
+                </draw-text>
             </group>
         </draw>
     </group>
@@ -571,67 +631,116 @@
                                     <get-val-0-24 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                 </toggle-image>
+                                <if comment="false" x="48" y="344">
+                                    <group eventID="11" id="-1">
+                                        <stop-sounds comment="false" x="59" y="369"/>
+                                        <play-sound4 comment="false" x="59" y="389">
+                                            <int id="0" val="0"/>
+                                            <sound eid="52" id="1"/>
+                                        </play-sound4>
+                                        <set-val-0-29 comment="false" x="59" y="416">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-29>
+                                    </group>
+                                    <get-val-0-29 comment="false" id="0" x="0" y="0"/>
+                                </if>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <get-val-0-22 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="0"/>
                             </eq>
                         </if>
-                        <else-if comment="false" x="37" y="356">
+                        <else-if comment="false" x="37" y="465">
                             <group eventID="11" id="-1">
-                                <toggle-image comment="false" x="48" y="386">
+                                <toggle-image comment="false" x="48" y="495">
                                     <get-val-0-24 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="0"/>
                                 </toggle-image>
-                                <setanim comment="false" x="48" y="418">
+                                <setanim comment="false" x="48" y="527">
                                     <get-val-0-24 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                 </setanim>
-                                <toggle-image comment="false" x="48" y="450">
+                                <toggle-image comment="false" x="48" y="559">
                                     <get-val-0-25 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                 </toggle-image>
+                                <if comment="false" x="48" y="591">
+                                    <group eventID="11" id="-1">
+                                        <stop-sounds comment="false" x="59" y="616"/>
+                                        <play-sound4 comment="false" x="59" y="636">
+                                            <int id="0" val="0"/>
+                                            <sound eid="51" id="1"/>
+                                        </play-sound4>
+                                        <incdec comment="false" x="59" y="663">
+                                            <int id="0" val="26"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="1"/>
+                                        </incdec>
+                                        <set-val-0-29 comment="false" x="59" y="690">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-29>
+                                    </group>
+                                    <get-val-0-29 comment="false" id="0" x="0" y="0"/>
+                                </if>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <get-val-0-22 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="2"/>
                             </eq>
                         </else-if>
-                        <else-if comment="false" x="37" y="494">
+                        <else-if comment="false" x="37" y="739">
                             <group eventID="11" id="-1">
-                                <toggle-image comment="false" x="48" y="524">
+                                <toggle-image comment="false" x="48" y="769">
                                     <get-val-0-24 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="0"/>
                                 </toggle-image>
-                                <setanim comment="false" x="48" y="556">
+                                <setanim comment="false" x="48" y="801">
                                     <get-val-0-24 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="2"/>
                                 </setanim>
-                                <toggle-image comment="false" x="48" y="588">
+                                <toggle-image comment="false" x="48" y="833">
                                     <get-val-0-25 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                 </toggle-image>
+                                <if comment="false" x="48" y="865">
+                                    <group eventID="11" id="-1">
+                                        <stop-sounds comment="false" x="59" y="890"/>
+                                        <play-sound4 comment="false" x="59" y="910">
+                                            <int id="0" val="0"/>
+                                            <sound eid="51" id="1"/>
+                                        </play-sound4>
+                                        <incdec comment="false" x="59" y="937">
+                                            <int id="0" val="27"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="1"/>
+                                        </incdec>
+                                        <set-val-0-29 comment="false" x="59" y="964">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-0-29>
+                                    </group>
+                                    <get-val-0-29 comment="false" id="0" x="0" y="0"/>
+                                </if>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <get-val-0-22 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="4"/>
                             </eq>
                         </else-if>
-                        <else comment="false" x="37" y="632">
+                        <else comment="false" x="37" y="1013">
                             <group eventID="11" id="-1">
-                                <toggle-image comment="false" x="48" y="652">
+                                <toggle-image comment="false" x="48" y="1033">
                                     <get-val-0-24 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                 </toggle-image>
-                                <toggle-image comment="false" x="48" y="684">
+                                <toggle-image comment="false" x="48" y="1065">
                                     <get-val-0-25 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="1"/>
                                 </toggle-image>
                             </group>
                         </else>
-                        <if comment="false" x="37" y="728">
+                        <if comment="false" x="37" y="1109">
                             <group eventID="11" id="-1">
-                                <set-game-val-7 comment="false" x="48" y="758">
+                                <set-game-val-7 comment="false" x="48" y="1139">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-7>
                             </group>
@@ -643,29 +752,29 @@
                     </group>
                     <int id="0" val="Check winner condition."/>
                 </comment-wrapper>
-                <comment-long comment="false" x="26" y="807">
+                <comment-long comment="false" x="26" y="1188">
                     <int id="0" val="Show &amp;quot;new round&amp;quot; button when game is over. Otherwise hide this button."/>
                 </comment-long>
-                <if comment="false" x="26" y="887">
+                <if comment="false" x="26" y="1268">
                     <group eventID="11" id="-1">
-                        <toggle-image comment="false" x="37" y="912">
+                        <toggle-image comment="false" x="37" y="1293">
                             <ACTOR eid="6" id="0"/>
                             <int id="1" val="0"/>
                         </toggle-image>
-                        <toggle-image comment="false" x="37" y="939">
+                        <toggle-image comment="false" x="37" y="1320">
                             <get-val-0-23 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>
                         </toggle-image>
                     </group>
                     <get-game-val-7 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="983">
+                <else comment="false" x="26" y="1364">
                     <group eventID="11" id="-1">
-                        <toggle-image comment="false" x="37" y="1003">
+                        <toggle-image comment="false" x="37" y="1384">
                             <ACTOR eid="6" id="0"/>
                             <int id="1" val="1"/>
                         </toggle-image>
-                        <toggle-image comment="false" x="37" y="1030">
+                        <toggle-image comment="false" x="37" y="1411">
                             <get-val-0-23 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="0"/>
                         </toggle-image>
@@ -699,6 +808,11 @@
                     <get-val-0-10 comment="false" id="0" x="0" y="0"/>
                     <get-val-0-11 comment="false" id="1" x="0" y="0"/>
                 </custom-24>
+                <incdec comment="false" x="26" y="67">
+                    <int id="0" val="28"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
             </group>
             <ACTOR eid="6" id="0"/>
             <int id="1" val="4"/>

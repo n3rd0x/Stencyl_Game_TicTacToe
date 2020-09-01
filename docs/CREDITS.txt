@@ -5,7 +5,7 @@
 ====================
 = Arts
 ====================
-*  Kenney.nl (http://kenney.nl)
+ * Kenney.nl (https://www.kenney.nl)
 
     Simplified Platformer Pack
     https://kenney.nl/assets/simplified-platformer-pack
@@ -15,7 +15,7 @@
         -   platformPack_tile036.png
         -   platformPack_tile042.png
 
-*   CoolText (https://cooltext.com)
+ * CoolText (https://cooltext.com)
     Tic Tac Toe (Fun style)
         - Start Colour: #12E0D2
         - End Colour:   #0952F0
@@ -35,7 +35,10 @@
         - End Colour:   #F96100
 
     New Round(Easy style)
+    Start Game
+    Credits
         - Colour:       #004A99
+        - Colour:       #FF0505
 
 
 
@@ -43,7 +46,9 @@
 ====================
 = Musics
 ====================
-
+ * Tim Beek (https://timbeek.com)
+    Try and Solve This
+    https://timbeek.itch.io/royalty-free-music-pack
 
 
 
@@ -51,9 +56,16 @@
 ====================
 = Sounds
 ====================
-*   Kenney.nl (http://kenney.nl)
+ * Kenney.nl (https://www.kenney.nl)
     Interface Sounds
     https://kenney.nl/assets/interface-sounds
         -   confirmation_004.ogg
         -   switch_007.ogg
+
+ * Freesound.org (https://www.freesound.org)
+    Applause
+    https://freesound.org/people/Sandermotions/sounds/277021/
+
+    Awww0
+    https://freesound.org/people/tim.kahn/sounds/336998/
 

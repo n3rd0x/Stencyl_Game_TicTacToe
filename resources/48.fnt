@@ -1,15 +1,15 @@
 #
-#Tue Sep 01 10:31:25 CEST 2020
-shadow.x=1
-shadow.y=1
+#Mon Aug 31 19:33:16 CEST 2020
+shadow.x=2
+shadow.y=2
 color=\#ffffff
-shadow.blur=1
+shadow.blur=2
 stroke.size=0
 shadow.color=\#000000
 alphabet=
 gradient.offset=0
-size=16
+size=40
 antialias=true
 style=plain
 family=SansSerif
-chars=all
+chars=0-9

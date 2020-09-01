@@ -4,6 +4,8 @@
     <custom-block blocktag="custom-6" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="6" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-11" blocktype="ACTION" code="scripts.Design_2_2_SceneFunctions._customBlock_();" desc="" global="true" gui="Missing" id="11" message="" name="" oid="-1" return="void" shared="false" snippetID="2"/>
     <custom-block blocktag="custom-23" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="23" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="31" name="bgBoardOutline" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="56" name="bgScreenTitle" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="1" fixedrot="false" fric="0.2" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Block" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="true">
         <snippets/>
     </actor>
@@ -24,7 +26,6 @@
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="31" name="BoardOutline" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-29" blocktype="NORMAL" code="(sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_CheckWinner&quot;) : Float)" desc="Check winner, return -1 nothing, 0 for tie, 2 for player A and 4 for player B." global="false" gui="CheckWinner" id="29" message="CheckWinner" name="CheckWinner" oid="-1" return="number" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-7" blocktype="NORMAL" code="(sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_CreateBlock&quot;, [, , ]) : Actor)" desc="Create new or reset block." global="false" gui="CreateBlock( ref: %0 x: %1 y: %2 )" id="7" message="CreateBlock" name="CreateBlock" oid="-1" return="actor" shared="false" snippetID="0">
         <blank name="ref" order="0" type="object"/>
@@ -74,12 +75,34 @@
         <blank name="sx" order="0" type="number"/>
         <blank name="sy" order="1" type="number"/>
     </custom-block>
-    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="44" id="27" name="Standard" offsets="0|0|0|,6|0|6,10|0|10,17|0|17,28|0|28,37|0|37,49|0|49,61|0|61,65|0|65,71|0|71,77|0|77,85|0|85,96|0|96,100|0|100,109|0|109,113|0|113,120|0|120,130|0|130,138|0|138,147|0|147,156|0|156,167|0|167,176|0|176,185|0|185,195|0|195,205|0|205,215|0|215,219|0|219,223|0|223,234|0|234,245|0|245,256|0|256,264|0|264,279|0|279,291|0|291,300|0|300,312|0|312,324|0|324,333|0|333,341|0|341,353|0|353,364|0|364,368|0|368,375|0|375,386|0|386,395|0|395,408|0|408,419|0|419,432|0|432,441|0|441,455|0|455,465|0|465,474|0|474,485|0|485,495|0|495,507|0|507,522|0|522,533|0|533,544|0|544,554|0|554,559|0|559,566|0|566,571|0|571,582|0|582,591|0|591,596|0|596,606|0|606,616|0|616,625|0|625,635|0|635,644|0|644,652|0|652,662|0|662,671|0|671,675|0|675,682|0|682,691|0|691,695|0|695,709|0|709,718|0|718,728|0|728,738|0|738,748|0|748,755|0|755,762|0|762,769|0|769,778|0|778,788|0|788,802|0|802,813|0|813,823|0|823,833|0|833,839|0|839,842|0|842,848|0|848,859|0|859,866|0|866,875|0|875,884|0|884,893|0|893,902|0|902,911|0|911,920|0|920,929|0|929,938|0|938,947|0|947,956|0|956,965|0|965,974|0|974,983|0|983,992|0|992,1001|0|1001,1010|0|1010,1019|0|1019,1028|0|1028,1037|0|1037,1046|0|1046,1055|0|1055,1064|0|1064,1073|0|1073,1082|0|1082,1091|0|1091,1100|0|1100,1109|0|1109,1118|0|1118,1127|0|1127,1136|0|1136,1145|0|1145,1154|0|1154,1160|0|1160,1164|0|1164,1173|0|1173,1182|0|1182,1193|0|1193,1204|0|1204,1207|0|1207,1216|0|1216,1223|0|1223,1237|0|1237,1244|0|1244,1253|0|1253,1264|0|1264,1273|0|1273,1287|0|1287,1296|0|1296,1302|0|1302,1313|0|1313,1319|0|1319,1325|0|1325,1330|0|1330,1339|0|1339,1348|0|1348,1352|0|1352,1357|0|1357,1363|0|1363,1371|0|1371,1380|0|1380,1394|0|1394,1408|0|1408,1422|0|1422,1430|0|1430,1442|0|1442,1454|0|1454,1466|0|1466,1478|0|1478,1490|0|1490,1502|0|1502,1518|0|1518,1530|0|1530,1539|0|1539,1548|0|1548,1557|0|1557,1566|0|1566,1572|0|1572,1577|0|1577,1585|0|1585,1591|0|1591,1605|0|1605,1616|0|1616,1629|0|1629,1642|0|1642,1655|0|1655,1668|0|1668,1681|0|1681,1692|0|1692,1705|0|1705,1715|0|1715,1725|0|1725,1735|0|1735,1745|0|1745,1756|0|1756,1765|0|1765,1775|0|1775,1785|0|1785,1795|0|1795,1805|0|1805,1815|0|1815,1825|0|1825,1835|0|1835,1849|0|1849,1858|0|1858,1867|0|1867,1876|0|1876,1885|0|1885,1894|0|1894,1900|0|1900,1905|0|1905,1913|0|1913,1919|0|1919,1929|0|1929,1938|0|1938,1948|0|1948,1958|0|1958,1968|0|1968,1978|0|1978,1988|0|1988,1999|0|1999,2009|0|2009,2018|0|2018,2027|0|2027,2036|0|2036,2045|0|2045,2055|0|2055,2065|0|2065,2075|0|2075,2087|0|2087,2097|0|2097,2109|0|2109,2119|0|2119,2131|0|2131,2141|0|2141,2153|0|2153,2162|0|2162,2174|0|2174,2183|0|2183,2195|0|2195,2204|0|2204,2216|0|2216,2225|0|2225,2237|0|2237,2250|0|2250,2264|0|2264,2275|0|2275,2284|0|2284,2293|0|2293,2302|0|2302,2311|0|2311,2320|0|2320,2329|0|2329,2338|0|2338,2347|0|2347,2356|0|2356,2365|0|2365,2377|0|2377,2387|0|2387,2399|0|2399,2409|0|2409,2421|0|2421,2431|0|2431,2443|0|2443,2453|0|2453,2464|0|2464,2473|0|2473,2487|0|2487,2497|0|2497,2504|0|2504,2511|0|2511,2518|0|2518,2525|0|2525,2532|0|2532,2539|0|2539,2543|0|2543,2547|0|2547,2551|0|2551,2555|0|2555,2564|0|2564,2572|0|2572,2581|0|2581,2590|0|2590,2601|0|2601,2610|0|2610,2619|0|2619,2628|0|2628,2633|0|2633,2642|0|2642,2646|0|2646,2655|0|2655,2661|0|2661,2670|0|2670,2677|0|2677,2687|0|2687,2694|0|2694,2705|0|2705,2714|0|2714,2725|0|2725,2734|0|2734,2745|0|2745,2754|0|2754,2765|0|2765,2776|0|2776,2785|0|2785,2798|0|2798,2808|0|2808,2821|0|2821,2831|0|2831,2844|0|2844,2855|0|2855,2872|0|2872,2887|0|2887,2897|0|2897,2904|0|2904,2914|0|2914,2921|0|2921,2931|0|2931,2938|0|2938,2947|0|2947,2954|0|2954,2963|0|2963,2970|0|2970,2979|0|2979,2986|0|2986,2995|0|2995,3002|0|3002,3013|0|3013,3020|0|3020,3031|0|3031,3039|0|3039,3050|0|3050,3057|0|3057,3067|0|3067,3076|0|3076,3086|0|3086,3095|0|3095,3105|0|3105,3114|0|3114,3124|0|3124,3133|0|3133,3143|0|3143,3152|0|3152,3162|0|3162,3171|0|3171,3186|0|3186,3200|0|3200,3211|0|3211,0|22|3221,11|22|3232,21|22|3242,31|22|3252,41|22|3262,51|22|3272,61|22|3282,71|22|3292" oid="-1" prerendered="false" readable="false" rowHeight="22" shared="false"/>
+    <font alphabet="0123456789" atlasID="0" desc="" height="35" id="48" name="Score" offsets="0|0|0|,26|0|26,47|0|47,70|0|70,92|0|92,118|0|118,140|0|140,166|0|166,190|0|190,215|0|215" oid="-1" prerendered="false" readable="false" rowHeight="35" shared="false"/>
+    <music atlasID="0" desc="" id="51" loop="true" name="sndApplause" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="59" loop="true" name="sndButtonHover" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="50" loop="true" name="sndConfirmation" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="52" loop="true" name="sndDisappoint" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="53" loop="true" name="sndGamePlay" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="49" loop="true" name="sndSelection" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="48" id="27" name="Standard" offsets="0|0|0|,6|0|6,12|0|12,21|0|21,34|0|34,45|0|45,59|0|59,73|0|73,79|0|79,87|0|87,95|0|95,105|0|105,118|0|118,124|0|124,135|0|135,141|0|141,150|0|150,162|0|162,172|0|172,183|0|183,194|0|194,206|0|206,217|0|217,228|0|228,240|0|240,252|0|252,264|0|264,270|0|270,276|0|276,289|0|289,302|0|302,315|0|315,325|0|325,342|0|342,356|0|356,367|0|367,381|0|381,395|0|395,406|0|406,416|0|416,430|0|430,443|0|443,449|0|449,458|0|458,470|0|470,481|0|481,496|0|496,509|0|509,524|0|524,535|0|535,551|0|551,563|0|563,574|0|574,587|0|587,599|0|599,613|0|613,630|0|630,643|0|643,656|0|656,668|0|668,675|0|675,684|0|684,691|0|691,704|0|704,715|0|715,722|0|722,734|0|734,746|0|746,757|0|757,769|0|769,780|0|780,790|0|790,802|0|802,813|0|813,819|0|819,828|0|828,839|0|839,845|0|845,861|0|861,872|0|872,884|0|884,896|0|896,908|0|908,917|0|917,926|0|926,935|0|935,946|0|946,958|0|958,974|0|974,986|0|986,998|0|998,1010|0|1010,1018|0|1018,1023|0|1023,1030|0|1030,1043|0|1043,1050|0|1050,1061|0|1061,1072|0|1072,1083|0|1083,1094|0|1094,1105|0|1105,1116|0|1116,1127|0|1127,1138|0|1138,1149|0|1149,1160|0|1160,1171|0|1171,1182|0|1182,1193|0|1193,1204|0|1204,1215|0|1215,1226|0|1226,1237|0|1237,1248|0|1248,1259|0|1259,1270|0|1270,1281|0|1281,1292|0|1292,1303|0|1303,1314|0|1314,1325|0|1325,1336|0|1336,1347|0|1347,1358|0|1358,1369|0|1369,1380|0|1380,1391|0|1391,1402|0|1402,1408|0|1408,1414|0|1414,1425|0|1425,1436|0|1436,1449|0|1449,1462|0|1462,1467|0|1467,1478|0|1478,1487|0|1487,1503|0|1503,1512|0|1512,1523|0|1523,1536|0|1536,1547|0|1547,1563|0|1563,1574|0|1574,1582|0|1582,1595|0|1595,1603|0|1603,1611|0|1611,1618|0|1618,1629|0|1629,1640|0|1640,1646|0|1646,1653|0|1653,1661|0|1661,1671|0|1671,1682|0|1682,1698|0|1698,1713|0|1713,1729|0|1729,1739|0|1739,1753|0|1753,1767|0|1767,1781|0|1781,1795|0|1795,1809|0|1809,1823|0|1823,1841|0|1841,1855|0|1855,1866|0|1866,1877|0|1877,1888|0|1888,1899|0|1899,1907|0|1907,1914|0|1914,1923|0|1923,1931|0|1931,1947|0|1947,1960|0|1960,1975|0|1975,1990|0|1990,2005|0|2005,2020|0|2020,2035|0|2035,2048|0|2048,2063|0|2063,2075|0|2075,2087|0|2087,2099|0|2099,2111|0|2111,2124|0|2124,2135|0|2135,2147|0|2147,2159|0|2159,2171|0|2171,2183|0|2183,2195|0|2195,2207|0|2207,2219|0|2219,2235|0|2235,2246|0|2246,2257|0|2257,2268|0|2268,2279|0|2279,2290|0|2290,2298|0|2298,2305|0|2305,2314|0|2314,2322|0|2322,2334|0|2334,2345|0|2345,2357|0|2357,2369|0|2369,2381|0|2381,2393|0|2393,2405|0|2405,2418|0|2418,2430|0|2430,2441|0|2441,2452|0|2452,2463|0|2463,2474|0|2474,2486|0|2486,2498|0|2498,2510|0|2510,2524|0|2524,2536|0|2536,2550|0|2550,2562|0|2562,2576|0|2576,2588|0|2588,2602|0|2602,2613|0|2613,2627|0|2627,2638|0|2638,2652|0|2652,2663|0|2663,2677|0|2677,2688|0|2688,2702|0|2702,2717|0|2717,2733|0|2733,2746|0|2746,2757|0|2757,2768|0|2768,2779|0|2779,2790|0|2790,2801|0|2801,2812|0|2812,2823|0|2823,2834|0|2834,2845|0|2845,2856|0|2856,2870|0|2870,2882|0|2882,2896|0|2896,2908|0|2908,2922|0|2922,2934|0|2934,2948|0|2948,2960|0|2960,2973|0|2973,2984|0|2984,3000|0|3000,3012|0|3012,3021|0|3021,3030|0|3030,3039|0|3039,3048|0|3048,3057|0|3057,3066|0|3066,3072|0|3072,3078|0|3078,3084|0|3084,3090|0|3090,3101|0|3101,3111|0|3111,3122|0|3122,3133|0|3133,3145|0|3145,0|24|3156,11|24|3167,22|24|3178,29|24|3185,40|24|3196,46|24|3202,57|24|3213,65|24|3221,76|24|3232,85|24|3241,97|24|3253,106|24|3262,119|24|3275,130|24|3286,143|24|3299,154|24|3310,167|24|3323,178|24|3334,191|24|3347,204|24|3360,215|24|3371,230|24|3386,242|24|3398,257|24|3413,269|24|3425,284|24|3440,296|24|3452,315|24|3471,332|24|3488,344|24|3500,353|24|3509,365|24|3521,374|24|3530,386|24|3542,395|24|3551,406|24|3562,415|24|3571,426|24|3582,435|24|3591,446|24|3602,455|24|3611,466|24|3622,475|24|3631,488|24|3644,497|24|3653,510|24|3666,520|24|3676,533|24|3689,542|24|3698,554|24|3710,565|24|3721,577|24|3733,588|24|3744,600|24|3756,611|24|3767,623|24|3779,634|24|3790,646|24|3802,657|24|3813,669|24|3825,680|24|3836,697|24|3853,713|24|3869,726|24|3882,738|24|3894,751|24|3907,763|24|3919,775|24|3931,787|24|3943,799|24|3955,811|24|3967,823|24|3979" oid="-1" prerendered="false" readable="false" rowHeight="24" shared="false"/>
     <custom-block blocktag="custom-15" blocktype="ACTION" code="sayToScene(&quot;SceneFunctions&quot;, &quot;_customBlock_test&quot;);" desc="" global="false" gui="test" id="15" message="test" name="test" oid="-1" return="void" shared="false" snippetID="2"/>
     <custom-block blocktag="custom-21" blocktype="ACTION" code="sayToScene(&quot;SceneFunctions&quot;, &quot;_customBlock_TEst&quot;);" desc="" global="false" gui="TESTT" id="21" message="TEst" name="TEst" oid="-1" return="void" shared="false" snippetID="-1"/>
     <custom-block blocktag="custom-22" blocktype="ACTION" code="sayToScene(&quot;SceneFunctions&quot;, &quot;_customBlock_test&quot;, []);" desc="" global="false" gui="test( %0 )" id="22" message="test" name="test" oid="-1" return="void" shared="false" snippetID="-1">
         <blank name="self" order="0" type="scene"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="14" fixedrot="false" fric="0.2" gid="3" id="57" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="uiCredtis" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="58" static="false">
+        <snippets>
+            <s enabled="true" id="11">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="58" name="uiCredtis" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="114" id="0" loop="true" name="0" numframes="1" originx="204" originy="57" sync="false" version="2" width="408">
+            <poly data="4,0,0,408,0,408,114,0,114" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="114" id="1" loop="true" name="1" numframes="1" originx="204" originy="57" sync="false" version="2" width="408">
+            <poly data="4,0,0,408,0,408,114,0,114" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="5" fixedrot="false" fric="0.2" gid="3" id="36" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="uiMarker1" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="37" static="true">
         <snippets/>
     </actor>
@@ -97,11 +120,18 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="3" id="42" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="uiNewRound" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="43" static="true">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="11">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="43" name="uiNewRound" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="114" id="0" loop="true" name="Animation 0" numframes="1" originx="288" originy="57" sync="false" version="2" width="577">
+        <anim across="1" down="1" durations="100" height="114" id="0" loop="true" name="0" numframes="1" originx="288" originy="57" sync="false" version="2" width="577">
             <poly data="4,0,114,577,114,577,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="114" id="1" loop="true" name="1" numframes="1" originx="288" originy="57" sync="false" version="2" width="577">
+            <poly data="4,0,114,577,114,577,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="4" fixedrot="false" fric="0.2" gid="3" id="34" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="uiPlayer1" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="35" static="true">
@@ -125,7 +155,7 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="47" name="uiResultTie" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="75" id="0" loop="true" name="Animation 0" numframes="1" originx="179" originy="37" sync="false" version="2" width="359">
-            <poly data="4,0,0,359,0,359,75,0,75" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,0,75,359,75,359,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="9" fixedrot="false" fric="0.2" gid="3" id="44" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="uiResultWins" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="45" static="true">
@@ -133,10 +163,27 @@
     </actor>
     <sprite atlasID="0" default="1" defaultAnimation="1" desc="" id="45" name="uiResultWins" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="158" id="1" loop="true" name="1" numframes="1" originx="158" originy="79" sync="false" version="2" width="316">
-            <poly data="4,0,0,317,0,317,158,0,158" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+            <poly data="4,0,158,317,158,317,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="158" id="2" loop="true" name="2" numframes="1" originx="158" originy="79" sync="false" version="2" width="317">
-            <poly data="4,0,0,317,0,317,158,0,158" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+            <poly data="4,0,158,317,158,317,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="false" fric="0.2" gid="3" id="54" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="uiStartGame" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="55" static="false">
+        <snippets>
+            <s enabled="true" id="11">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="55" name="uiStartGame" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="114" id="0" loop="true" name="0" numframes="1" originx="293" originy="57" sync="false" version="2" width="587">
+            <poly data="4,0,114,587,114,587,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="114" id="1" loop="true" name="1" numframes="1" originx="293" originy="57" sync="false" version="2" width="587">
+            <poly data="4,0,0,587,0,587,114,0,114" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="3" fixedrot="false" fric="0.2" gid="3" id="32" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="uiTitle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="33" static="true">

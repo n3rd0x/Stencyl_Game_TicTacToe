@@ -39,6 +39,15 @@
                                         </setanim>
                                     </group>
                                 </else>
+                                <comment-wrapper comment="false" x="48" y="258">
+                                    <group eventID="2" id="-1">
+                                        <play-sound4 comment="false" x="59" y="278">
+                                            <int id="0" val="0"/>
+                                            <sound eid="49" id="1"/>
+                                        </play-sound4>
+                                    </group>
+                                    <int id="0" val="Add this on Video007."/>
+                                </comment-wrapper>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <as-number comment="false" id="0" x="0" y="0">
@@ -143,6 +152,10 @@
                                 <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                             </not>
                         </set-game-val-0>
+                        <play-sound4 comment="false" x="37" y="311">
+                            <int id="0" val="0"/>
+                            <sound eid="50" id="1"/>
+                        </play-sound4>
                     </group>
                     <or comment="false" id="0" x="0" y="0">
                         <eq comment="false" id="0" x="0" y="0">
