@@ -51,6 +51,20 @@
                         <int id="1" val="80"/>
                     </plus>
                 </draw-text>
+                <draw-text comment="false" x="26" y="223">
+                    <get-val-15-4 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <custom-25 comment="false" id="0" x="0" y="0"/>
+                        <custom-65 comment="false" id="1" x="0" y="0">
+                            <get-val-15-4 comment="false" id="0" x="0" y="0"/>
+                            <font eid="27" id="1"/>
+                        </custom-65>
+                    </minus>
+                    <plus comment="false" id="2" x="0" y="0">
+                        <custom-26 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="100"/>
+                    </plus>
+                </draw-text>
             </group>
         </draw>
     </group>

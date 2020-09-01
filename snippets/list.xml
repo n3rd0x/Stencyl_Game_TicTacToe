@@ -133,6 +133,7 @@
         <text default="Made by" defaultValue="Made by" desc="" dropdown="" fullname="MadeBy" hidden="false" id="1" name="_MadeBy" order="0"/>
         <text default="n3rd0x" defaultValue="n3rd0x" desc="" dropdown="" fullname="Author" hidden="false" id="2" name="_Author" order="1"/>
         <text default="01/09-2020" defaultValue="01/09-2020" desc="" dropdown="" fullname="Date" hidden="false" id="3" name="_Date" order="2"/>
+        <text default="v.1.0.0" defaultValue="v.1.0.0" desc="" dropdown="" fullname="Version" hidden="false" id="4" name="_Version" order="3"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
