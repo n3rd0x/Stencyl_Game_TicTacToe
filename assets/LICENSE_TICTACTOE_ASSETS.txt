@@ -20,6 +20,13 @@
     - sprStartGame.png
     - sprTieGame.png
     - sprTitle.png
+    - Loading.png
+    - Stencyl_AppIcon_150x150.png
+    - Stencyl_AppIcon_150x150.xcf
+    - Stencyl_GameIcon.png
+    - Stencyl_GameIcon.xcf
+    - Stencyl_GameLogo.png
+    - Stencyl_GameLogo.xcf
 
 These assets are license under:
 CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
