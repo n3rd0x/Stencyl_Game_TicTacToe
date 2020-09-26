@@ -14,13 +14,13 @@
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="0" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="64" id="1" loop="true" name="1" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+        <anim across="2" down="1" durations="300,300" height="64" id="1" loop="true" name="1" numframes="2" originx="32" originy="32" sync="false" version="2" width="128">
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="64" id="2" loop="true" name="2" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" down="1" durations="100" height="64" id="3" loop="true" name="3" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+        <anim across="2" down="1" durations="300,300" height="64" id="3" loop="true" name="3" numframes="2" originx="32" originy="32" sync="false" version="2" width="128">
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="64" id="4" loop="true" name="4" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
