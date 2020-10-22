@@ -41,7 +41,7 @@
             <event displayName="IsInRow" enabled="true" id="10" name="event-custom-block" order="14" repeats="true"/>
             <event displayName="Updating" enabled="true" id="11" name="step" order="2" repeats="true"/>
             <event displayName="Click" enabled="false" id="12" name="event-mouse-press-release" order="9" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="13" name="event-mouse-enter-exit-actor" order="10" repeats="true"/>
+            <event displayName="ClickNewRound" enabled="true" id="13" name="event-mouse-enter-exit-actor" order="10" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="0" attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_0" oid="-1" package="scripts." shared="false" type="actor">
@@ -67,6 +67,7 @@
             <event displayName="HalfScreenWidth" enabled="true" id="1" name="event-custom-block-global" order="2" repeats="true"/>
             <event displayName="HalfScreenHeight" enabled="true" id="2" name="event-custom-block-global" order="1" repeats="true"/>
             <event displayName="HalfTextWidth" enabled="true" id="3" name="event-custom-block-global" order="3" repeats="true"/>
+            <event displayName="Global Block" enabled="true" id="4" name="event-custom-block-global" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="32" attachedevent="true" class="scripts.ActorEvents_32" classname="scripts.ActorEvents_32" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_32" oid="-1" package="scripts." shared="false" type="actor">
@@ -116,7 +117,9 @@
     </snippet>
     <snippet actorid="54" attachedevent="true" class="scripts.ActorEvents_54" classname="scripts.ActorEvents_54" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_54" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="13" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
         <blocks/>

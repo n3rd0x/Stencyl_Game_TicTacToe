@@ -7,6 +7,9 @@
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="0"/>
                 </setanim>
+                <print comment="false" x="26" y="72">
+                    <int id="0" val="RESET"/>
+                </print>
             </group>
             <get-byobval-1-5-0 comment="false" id="0" x="0" y="0"/>
         </receiver-1-5>

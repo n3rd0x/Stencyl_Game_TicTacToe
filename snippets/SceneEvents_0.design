@@ -51,11 +51,7 @@
                         <set-val-0-25 comment="false" x="37" y="246">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-0-25>
-                        <toggle-image comment="false" x="37" y="273">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="1"/>
-                        </toggle-image>
-                        <create-actor3 comment="false" x="37" y="300">
+                        <create-actor3 comment="false" x="37" y="273">
                             <actortype eid="44" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <custom-25 comment="false" id="0" x="0" y="0"/>
@@ -67,23 +63,19 @@
                             </minus>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <set-val-0-24 comment="false" x="37" y="337">
+                        <set-val-0-24 comment="false" x="37" y="310">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-0-24>
-                        <toggle-image comment="false" x="37" y="364">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="1"/>
-                        </toggle-image>
                     </group>
                     <int id="0" val="Modular the following later."/>
                 </comment-wrapper>
-                <set-val-0-26 comment="false" x="26" y="403">
+                <set-val-0-26 comment="false" x="26" y="349">
                     <int id="0" val="0"/>
                 </set-val-0-26>
-                <set-val-0-27 comment="false" x="26" y="423">
+                <set-val-0-27 comment="false" x="26" y="369">
                     <int id="0" val="0"/>
                 </set-val-0-27>
-                <set-val-0-28 comment="false" x="26" y="443">
+                <set-val-0-28 comment="false" x="26" y="389">
                     <int id="0" val="1"/>
                 </set-val-0-28>
             </group>

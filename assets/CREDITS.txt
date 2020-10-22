@@ -48,8 +48,8 @@
 = Musics
 ====================
  * Tim Beek (https://timbeek.com)
-    Try and Solve This
-    https://timbeek.itch.io/royalty-free-music-pack
+    -   Try and Solve This
+        https://timbeek.itch.io/royalty-free-music-pack
 
 
 
@@ -58,17 +58,17 @@
 = Sounds
 ====================
  * Kenney.nl (https://www.kenney.nl)
-    Interface Sounds
-    https://kenney.nl/assets/interface-sounds
-        -   confirmation_004.ogg
-        -   switch_007.ogg
+    -   Interface Sounds
+        https://kenney.nl/assets/interface-sounds
+            -   confirmation_004.ogg
+            -   switch_007.ogg
 
  * Freesound.org (https://www.freesound.org)
-    Sandermotions (https://www.freesound.org)
-    Applause
-    https://freesound.org/people/Sandermotions/sounds/277021/
+    *   Sandermotions (https://www.freesound.org)
+            -   Applause
+                https://freesound.org/people/Sandermotions/sounds/277021/
 
-    tim.kahn (https://www.freesound.org)
-    Awww0
-    https://freesound.org/people/tim.kahn/sounds/336998/
+    *   tim.kahn (https://www.freesound.org)
+            -   Awww0
+                https://freesound.org/people/tim.kahn/sounds/336998/
 

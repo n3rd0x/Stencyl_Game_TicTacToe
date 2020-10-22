@@ -4,6 +4,8 @@
     <custom-block blocktag="custom-6" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="6" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-11" blocktype="ACTION" code="scripts.Design_2_2_SceneFunctions._customBlock_();" desc="" global="true" gui="Missing" id="11" message="" name="" oid="-1" return="void" shared="false" snippetID="2"/>
     <custom-block blocktag="custom-23" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="23" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
+    <custom-block blocktag="custom-66" blocktype="ACTION" code="scripts.Design_2_2_SceneFunctions._customBlock_();" desc="" global="true" gui="Missing" id="66" message="" name="" oid="-1" return="void" shared="false" snippetID="2"/>
+    <custom-block blocktag="custom-67" blocktype="ACTION" code="scripts.Design_2_2_SceneFunctions._customBlock_();" desc="" global="true" gui="Missing" id="67" message="" name="" oid="-1" return="void" shared="false" snippetID="2"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="31" name="bgBoardOutline" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="62" name="bgCredits" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="56" name="bgScreenTitle" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
@@ -14,14 +16,14 @@
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="0" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="1" durations="300,300" height="64" id="1" loop="true" name="1" numframes="2" originx="32" originy="32" sync="false" version="2" width="128">
-            <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        <anim across="2" down="1" durations="300,300" height="64" id="1" loop="true" name="1" numframes="2" originx="64" originy="32" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="64" id="2" loop="true" name="2" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="1" durations="300,300" height="64" id="3" loop="true" name="3" numframes="2" originx="32" originy="32" sync="false" version="2" width="128">
-            <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        <anim across="2" down="1" durations="300,300" height="64" id="3" loop="true" name="3" numframes="2" originx="64" originy="32" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="3" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="64" id="4" loop="true" name="4" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,64,64,64,64,0,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
