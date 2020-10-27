@@ -12,14 +12,13 @@
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Block31" hidden="true" id="18" name="_Block31" order="8"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Block32" hidden="true" id="19" name="_Block32" order="9"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Block33" hidden="true" id="20" name="_Block33" order="10"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="CurRes" hidden="false" id="22" name="_CurRes" order="11"/>
-        <actor default="" defaultValue="" desc="" dropdown="" fullname="CurPlayer" hidden="false" id="23" name="_CurPlayer" order="12"/>
-        <actor default="" defaultValue="" desc="" dropdown="" fullname="uiResWins" hidden="false" id="24" name="_uiResWins" order="13"/>
-        <actor default="" defaultValue="" desc="" dropdown="" fullname="uiResTie" hidden="false" id="25" name="_uiResTie" order="14"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="uiScore1" hidden="false" id="26" name="_uiScore1" order="15"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="uiScore2" hidden="false" id="27" name="_uiScore2" order="16"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="uiRounds" hidden="false" id="28" name="_uiRounds" order="17"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="CanSetScore" hidden="false" id="29" name="_CanSetScore" order="18"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Results" hidden="false" id="22" name="_Results" order="11"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="CurrentPlayer" hidden="false" id="23" name="_CurrentPlayer" order="12"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="uiResultWins" hidden="false" id="24" name="_uiResultWins" order="13"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="uiResultTie" hidden="false" id="25" name="_uiResultTie" order="14"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="uiScore1" hidden="false" id="26" name="_uiScore1" order="15"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="uiScore2" hidden="false" id="27" name="_uiScore2" order="16"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="uiRounds" hidden="false" id="28" name="_uiRounds" order="17"/>
         <blocks>
             <receiver blockID="2" id="1"/>
             <receiver blockID="4" id="2"/>
@@ -36,10 +35,10 @@
             <event displayName="CreateBlock" enabled="true" id="4" name="event-custom-block" order="12" repeats="true"/>
             <event displayName="NewPos" enabled="true" id="6" name="event-custom-block" order="15" repeats="true"/>
             <event displayName="ResetBoard" enabled="true" id="7" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="8" name="draw" order="8" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="8" name="draw" order="2" repeats="true"/>
             <event displayName="CheckWinner" enabled="true" id="9" name="event-custom-block" order="13" repeats="true"/>
             <event displayName="IsInRow" enabled="true" id="10" name="event-custom-block" order="14" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="11" name="step" order="2" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="11" name="step" order="8" repeats="true"/>
             <event displayName="Click" enabled="false" id="12" name="event-mouse-press-release" order="9" repeats="true"/>
             <event displayName="ClickNewRound" enabled="true" id="13" name="event-mouse-enter-exit-actor" order="10" repeats="true"/>
         </events>
@@ -67,7 +66,6 @@
             <event displayName="HalfScreenWidth" enabled="true" id="1" name="event-custom-block-global" order="2" repeats="true"/>
             <event displayName="HalfScreenHeight" enabled="true" id="2" name="event-custom-block-global" order="1" repeats="true"/>
             <event displayName="HalfTextWidth" enabled="true" id="3" name="event-custom-block-global" order="3" repeats="true"/>
-            <event displayName="Global Block" enabled="true" id="4" name="event-custom-block-global" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="32" attachedevent="true" class="scripts.ActorEvents_32" classname="scripts.ActorEvents_32" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_32" oid="-1" package="scripts." shared="false" type="actor">
@@ -109,23 +107,21 @@
             <receiver blockID="60" id="1"/>
         </blocks>
         <events>
-            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
+            <event displayName="EnterActor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="ExitsActor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
             <event displayName="SetHidden" enabled="true" id="3" name="event-custom-block" order="4" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="4" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
+            <event displayName="ReleasedActor" enabled="true" id="4" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="54" attachedevent="true" class="scripts.ActorEvents_54" classname="scripts.ActorEvents_54" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_54" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="13" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
         <blocks/>
         <events>
-            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
-            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
+            <event displayName="ClickStartGame" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="ClickCredits" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="57" attachedevent="true" class="scripts.ActorEvents_57" classname="scripts.ActorEvents_57" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="14" name="ActorEvents_57" oid="-1" package="scripts." shared="false" type="actor">
@@ -145,7 +141,7 @@
     <snippet actorid="63" attachedevent="true" class="scripts.ActorEvents_63" classname="scripts.ActorEvents_63" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="16" name="ActorEvents_63" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+            <event displayName="MouseClick" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
         </events>
     </snippet>
 </pack>
